@@ -1,4 +1,5 @@
 local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
 local VirtualUser = game:GetService("VirtualUser")
 
 local function preventAFK()
@@ -10,9 +11,6 @@ end
 
 Players.LocalPlayer.Idled:Connect(preventAFK)
 print("Anti-AFK ativado!")
-
-local Players = game:GetService("Players")
-local LocalPlayer = Players.LocalPlayer
 
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/SadOz8/U/main/I", true))()
 
