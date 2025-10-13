@@ -27,7 +27,7 @@ local AutoFarm = window:AddTab("Farm Op")
 getgenv()._AutoRepFarmEnabled = false  
 
 -- Switch en la librería
-AutoFarm:AddSwitch("Strength Op)", function(state)
+AutoFarm:AddSwitch("Strength Op", function(state)
     getgenv()._AutoRepFarmEnabled = state
     warn("[Auto Rep Farm] Estado cambiado a:", state and "ON" or "OFF")
 end)
