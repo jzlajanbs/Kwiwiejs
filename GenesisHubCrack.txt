@@ -1,5 +1,10 @@
 local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
+
+if not LocalPlayer then
+    LocalPlayer = Players:WaitForChild("LocalPlayer")
+end
+
 local VirtualUser = game:GetService("VirtualUser")
 
 local function preventAFK()
